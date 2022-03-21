@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+  overflow-x: hidden;
 }
 
 a {
@@ -13,4 +15,129 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.border-dashed {
+  border: 3px dashed black !important;
+  box-sizing: border-box;
+}
+
+.text-brown {
+  color: brown;
+}
+
+.navbar .active {
+  color: brown !important;
+}
+
+.banner {
+  height: 665px;
+  /* padding-top: 120px !important; */
+}
+
+.text-burger {
+  font-size: 8rem;
+  margin-left: -10px;
+  text-shadow: 5px 5px 5px white;
+}
+
+.text-week {
+  font-size: 5rem;
+  margin-top: -30px;
+  text-shadow: 5px 5px 5px white;
+}
+
+.img-burger {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-burger img {
+  position: absolute;
+  margin-top: -50px;
+  transform: scale(1.2);
+  box-sizing: border-box;
+}
+
+.sale {
+  bottom: -10px !important;
+  transform: scale(0.7) !important;
+}
+
+.text-sale {
+  position: absolute;
+  bottom: 0px !important;
+}
+
+.text-sale-sub {
+  position: absolute;
+  bottom: 0px !important;
+}
+
+.card-image-burger {
+  position: relative;
+}
+
+.text-img-burger-one, .text-img-burger-two, .text-img-burger-three {
+  position: absolute;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: brown !important;
+}
+
+.carousel-indicators {
+  display: flex !important;
+  justify-content: start !important;
+}
+
+@media (max-width: 992px) { 
+  .navbar .px-5 {
+    padding: 0 10px !important;
+  }
+
+  .banner {
+    padding-top: 120px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .banner.px-5 {
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+  }
+
+  .border-dashed {
+    font-size: 0.6rem !important;
+  }
+
+  .text-burger {
+    font-size: 5rem;
+  }
+  
+  .text-week {
+    font-size: 3rem;
+    margin-left: -8px;
+  }
+
+  .img-burger {
+    display: none;
+  }
+
+  .navbar-brand img {
+    /* transform: scale(0.8); */
+    width: 200px;
+  }
+
+  .text-delivery {
+    display: none;
+  }
+
+  .card-image-burger:nth-child(1) {
+    margin-top: 2rem;
+  }
+
 }
